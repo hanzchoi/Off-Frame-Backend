@@ -1,7 +1,7 @@
 #cloudnary_url = "http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/"
 
 Product.create(
-  name: 'Wide Leg Cropped Trouser',
+  name: 'Wide Leg Cropped Trouser v1',
   price: 89.99,
   color: 'Prussion Blue',
   category: 'Trouser',
@@ -13,17 +13,18 @@ Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/
 Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001B-2.jpg', product_id: 1)
 Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001B-3.jpg', product_id: 1)
 
+Product.create(
+  name: 'Wide Leg Cropped Trouser v2',
+  price: 89.99,
+  color: 'Grey Brown',
+  category: 'Trouser',
+  size: 'EU 42, WAIST MEASUREMENT: 80~100, FULL HIP MEASUREMENT : 120, RISER MEASUREMENT: 32, PANTS LENGTH: 81',
+  description: 'Testing Testing')
+
+Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001A-1.jpg', product_id: 2)
+Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001A-2.jpg', product_id: 2)
 
 
-  # P-001A, P-001B (EU 42)
-  # WAIST MEASUREMENT: 80~100
-  #
-  # FULL HIP MEASUREMENT : 120
-  #
-  # RISER MEASUREMENT: 32
-  #
-  # PANTS LENGTH: 81
-#
 # T-001-1.jpg
 # T-001-2.jpg
 # T-001-3.jpg
@@ -79,8 +80,7 @@ Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/
 # SD-004B-2.jpg
 # SD-004B-3.png
 #
-# P-001A-1.jpg
-# P-001A-2.jpg
+
 #
 #
 #
