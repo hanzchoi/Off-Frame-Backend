@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :products
       resources :images
+      resources :shopping_carts
+      resources :users
     end
   end
 end
