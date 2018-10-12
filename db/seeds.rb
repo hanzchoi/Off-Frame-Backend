@@ -1,4 +1,4 @@
-cloudnary_url = "http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/"
+#cloudnary_url = "http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/"
 
 Product.create(
   name: 'Wide Leg Cropped Trouser',
@@ -9,9 +9,9 @@ Product.create(
   description: 'Testing Testing')
 
 # Wide Leg Cropped Trouser Prussion Blue #Id 1
-Image.create(url: `#{cloudnary_url}P-001B-1.jpg`, product_id: 1)
-Image.create(url: `#{cloudnary_url}P-001B-2.jpg`, product_id: 1)
-Image.create(url: `#{cloudnary_url}P-001B-3.jpg`, product_id: 1)
+Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001B-1.jpg', product_id: 1)
+Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001B-2.jpg', product_id: 1)
+Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001B-3.jpg', product_id: 1)
 
 
 
