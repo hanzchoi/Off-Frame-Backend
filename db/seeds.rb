@@ -26,7 +26,7 @@ Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/
 Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/P-001A-2.jpg', product_id: 2)
 
 Product.create(
-  name: 'Fifi Dress'
+  name: 'Fifi Dress',
   price: 139.99,
   color: 'Pastel Blue',
   category: 'Dress',
@@ -209,7 +209,7 @@ Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/
 #   size: '',
 #   description: ''
 # )
-# 
+#
 #
 # Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/', product_id: 15);
 
