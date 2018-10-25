@@ -1,4 +1,4 @@
-#cloudnary_url = "http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/"
+User.create(username: "JohnDoe", password:"123")
 
 Product.create(
   name: 'Wide Leg Cropped Trouser - Prussion Blue',
@@ -164,6 +164,16 @@ Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/
 Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/SD-003-3.jpg', product_id: 11);
 Image.create(url: 'http://res.cloudinary.com/dbgp0ijfb/image/upload/v1539268407/off-frame-studio/SD-003-4.png', product_id: 11);
 
+
+ShoppingCart.create(
+  user_id: 1,
+  product_id: 1
+)
+
+ShoppingCart.create(
+  user_id: 1,
+  product_id: 2
+)
 #
 # Product.create(
 #   name: '',
