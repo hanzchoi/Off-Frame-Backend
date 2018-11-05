@@ -2,7 +2,7 @@ class Api::V1::SessionsController < ApplicationController
   def login
     @user = User.find_by(username: user_params[:username])
     if(@user && @user.authenticate(user_params[:password]))
-      token = JWT.encode({user_id: @user.id}, "071618")
+      token = JWT.encode({user_id: @user.id}, ENV['SECRET_KEY'])
       render json: {
         user: { user_id: token, username: @user.username},
         # This is the part where you will save the items that partains to the user cart this is what is sent
@@ -19,7 +19,7 @@ class Api::V1::SessionsController < ApplicationController
   def persist
     token = request.headers["Authorization"]
     begin
-      payload = JWT.decode(token, "071618", true)
+      payload = JWT.decode(token, ENV['SECRET_KEY'], true)
     rescue JWT::DecodeError
       nil
     end
