@@ -4,9 +4,11 @@ class Api::V1::ShoppingCartsController < ApplicationController
     render json: @shopping_carts
   end
 
-  private
+  def create
+  end
 
+  private
   def shopping_cart_params
-    params.permit()
+    params.require(:shopping_cart).permit(:user_id, :product_id)
   end
 end
